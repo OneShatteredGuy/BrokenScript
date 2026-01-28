@@ -1,0 +1,17 @@
+#hello world
+class_name hello_world(arg1: String, arg2: String) {
+    let var hello := arg1;
+    let var world := arg2;
+    
+    let func printer1() {
+        print(hello + world)
+    }
+
+    class const helloWorld = 'hello world!!!'
+    
+    class func printer() {
+        print(helloWorld)
+    }
+}
+
+hello_world.new("A world of", "hellos to you!!!")
