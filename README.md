@@ -12,13 +12,25 @@ I am making a parser for my own programming language.  This is just a test in pr
 
 TODO:               STATUS:
 
+COMPILER            STARTED
+->TRANSLATE()
+->LEX()
+
+COMPILE_RULES       STARTED
+->"VARIABLE_DECLARE"
+
+INTERPRETER         STARTED
+->getLexRules()
+
 LEXER               UNSTARTED
 
-CONSTRUCTOR         UNSTARTED
+PARSER              UNSTARTED
 
-SYNTAX VALIDATOR    UNSTARTED
+ENFORCER            UNSTARTED
 
-COMPILER            UNSTARTED
+TRANSLATOR          UNSTARTED
+
+BUILDER             UNSTARTED
 
 
 DEVLOG:
@@ -30,6 +42,9 @@ I made the lexer today.  the lexer is pretty generic,and uses a factory object t
 
 #08/14/2026
 
-I restarted today.  There's been a large gap, during which i've really refined the direction I want to take this.
+I restarted today.  There's been a large gap, during which i've really refined the direction I want to take this.  I've also brainstormed a new data-driven structure for my language that should hopefully make it SUPER easy to make compile-time addons for it.
 
-I've also brainstormed a new data-driven structure for my language that should hopefully make it SUPER easy to make compile-time addons for it.
+PROBLEMS FOR FUTURE ME:
+finish the lexer.
+figure out how to keep index/line placements in the file for debugging errors
+figure out how to translate structured code into c++

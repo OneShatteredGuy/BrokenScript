@@ -1,0 +1,38 @@
+{
+    "TOKEN_DELIMINATORS": [" ", "\n"],
+    "TOKENBREAK_ESCAPE": ["${", "}"],
+    "COMPILETIME_PULLOUT": ["&{", "}"],
+    "GLOBAL_TOKENTYPES": {
+        "PEER": ["self", "global"],
+        "PEEK": ["self", "global"],
+        "PROD": ["self", "global"],
+        "REFERENCE": [],
+        "INLINE": [[]],
+        "LINEND": [";", "\n"],
+        "SPACER": [":", "|", "<>", "->", "::", "~", "!", "^", "><", "<-", ">-", "-<"],
+        "DELIMINATOR": ["var", "class", "struct"],
+        "ASSIGNER": ["=", "+=", "-=", "*=", "/=", "**=", "//="]
+    
+    },
+    "STRUCTURES": {
+        "VARIABLE_DECLARE": {
+            "structure": {
+                "PEER": "OPTIONAL{0}",
+                "PEEK": "OPTIONAL{0}",
+                "PROD":  "OPTIONAL{0}",
+                "DELIMINATOR": "REQUIRED",
+                "REFERENCE": "REQUIRED",
+                "SPACER": "OPTIONAL{1}",
+                "TYPE": "OPTIONAL{1}",
+                "ASSIGNER": "OPTIONAL{2}",
+                "INLINE": "OPTIONAL{2}",
+                "LINEND": "REQUIRED"
+            },
+            "TOKENTYPES": {
+                "DELIMINATOR": [0],
+                "ASSIGNER": [0],
+                "TYPE": ["Int", "Float", "Vector2", "Vector3", "iVector2", "iVector3", "frac", "iFrac", "Bool", "BitFlag", "BitArray", "String", "rString", "fString", "Dict", "Array", "Tuple", "Set", "None", "Void"]
+            }
+        }
+    }
+}
