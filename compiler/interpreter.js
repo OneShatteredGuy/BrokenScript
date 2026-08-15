@@ -13,14 +13,6 @@ function loadCompileRules(fileName) {
     return JSON.parse(raw);
 }
 
-function resolveVocab(localList, globalList) {
-    if (!localList) return globalList || [];
-    return localList.map(entry =>
-        typeof entry === 'number' ? globalList[entry] : entry
-    );
-}
-
-
 function getLexRules(rules) {
     const global_tokentypes = rules.GLOBAL_TOKENTYPES;
     const structures = rules.STRUCTURES;
@@ -94,6 +86,6 @@ function interpret(rulesFileName) {
     };
 }
 
-module.exports = { interpret, resolveVocab, loadCompileRules, getLexRules };
+module.exports = { interpret };
 
 console.log(interpret('compiler/compile_rules.json'));
