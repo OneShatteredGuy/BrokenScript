@@ -1,7 +1,12 @@
 {
-    "TOKEN_DELIMINATORS": [" ", "\n"],
-    "TOKENBREAK_ESCAPE": ["${", "}"],
-    "COMPILETIME_PULLOUT": ["&{", "}"],
+    "DELIMINATORS": {
+        "LINE": ["\n"],
+        "TOKEN": [" "]
+    },
+    "BREAKOUTS": {
+        "TOKEN_ESCAPE": ["/[", "]/"],
+        "COMPILE_PULLOUT": ["/{", "}/"]
+    },
     "GLOBAL_TOKENTYPES": {
         "PEER": ["self", "global"],
         "PEEK": ["self", "global"],
