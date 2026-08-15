@@ -1,8 +1,8 @@
 Project:     BrokenScript (BS) parser
 
-Name:        Noah Zielinski
+Name:        OneGuy
 
-last update: 01/27/2026
+last update: 08/14/2026
 
 version:     0.1
 
