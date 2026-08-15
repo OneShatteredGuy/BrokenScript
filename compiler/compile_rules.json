@@ -1,6 +1,6 @@
 {
     "DELIMINATORS": {
-        "LINE": ["\n"],
+        "LINE": ["\n", ";"],
         "TOKEN": [" "]
     },
     "BREAKOUTS": {
