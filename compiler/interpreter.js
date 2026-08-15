@@ -16,6 +16,8 @@ function loadCompileRules(fileName) {
 function getLexRules(rules) {
     const global_tokentypes = rules.GLOBAL_TOKENTYPES;
     const structures = rules.STRUCTURES;
+    const deliminators = rules.DELIMINATORS;
+    const breakouts = rules.BREAKOUTS;
 
     let built_tokens = {};
     let blacklisted = new Set();
@@ -72,7 +74,9 @@ function getLexRules(rules) {
 
     return {
         blacklisted: [...blacklisted],
-        built_tokens
+        built_tokens,
+        deliminators,
+        breakouts
     };
 }
 
