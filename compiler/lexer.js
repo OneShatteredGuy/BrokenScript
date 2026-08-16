@@ -39,7 +39,7 @@ function splitByMultiple(input, delimiters) {
     return parts;
 }
 
-funtion tokenize(lex_rules, fileRaw, fileName) {
+function tokenize(lex_rules, fileRaw, fileName) {
     let curr_file = fileName;
     let curr_line = 0;
     let curr_char = 0;
